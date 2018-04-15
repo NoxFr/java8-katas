@@ -1,0 +1,10 @@
+rootProject.name = 'java8-code-kata'
+include ':common-test-tool'
+include ':collection-interfaces'
+include ':stream-api'
+include ':date-and-time-api'
+
+project(':common-test-tool').projectDir = "$rootDir/common-test-tool" as File
+project(':collection-interfaces').projectDir = "$rootDir/collection-interfaces" as File
+project(':stream-api').projectDir = "$rootDir/stream-api" as File
+project(':date-and-time-api').projectDir = "$rootDir/date-and-time-api" as File
